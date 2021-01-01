@@ -1,0 +1,23 @@
+<%- include('header'); -%>
+
+    <div class="box" id="heading">
+        <h1><%= heading %></h1>
+    </div>
+
+    <div class="box">
+        <% listItems.map((item, index)=>{ %>
+        <div class="item">
+            <input type="checkbox" name="" id="">
+            <p><%= listItems[index] %></p>
+        </div>
+    
+        <% }) %>
+    
+        <form action="/" method="post" class="item">
+            <input type="text" name="addItem" , placeholder="Add Item" autocomplete="off">
+            <button type="submit" name="list" value= <%= heading %>>+</button>
+        </form>
+    
+    </div>
+
+   <%- include('footer'); -%>
